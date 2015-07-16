@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+    <title>Suku's CBC Mock-up</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+	body{
+	margin:0;
+	}
+	#topbar{
+	background-color:#ECECEC;
+	width:100%;
+	height:40px;
+	border-bottom:2px solid #ECECEC;
+	border-left:3px solid #DADADA;
+	
+	}
+	.fixedwidth{
+	width:1030px;
+	margin:0 auto;
+	background-color:#F1F1F1;
+	}
+	#mainlogo{
+	border-right:1px solid #ECECEC;
+	}
+	.fixedwidth img{
+	float:left;
+	margin-top:1px;
+	}
+	#topmenu {
+	float:left;
+	margin:0;
+		}
+	#topmenu ul{
+	float:left;
+	margin:0px;
+	padding:0;
+	}
+	.dropdown li:hover{
+	background-color:#575757;
+	color:white;
+	}
+	
+	#topmenu li{
+	list-style:none;
+	float:left;
+	padding:13px 12px 13px 12px;
+	background-color:white;
+	border-right:1px solid #ECECEC;
+	font-family:'Open Sans', sans-serif;
+	font-size:0.8em;
+	color:#515151;
+	}
+	#topmenu li:hover{
+	background-color:#575757;
+	color:white;
+	}
+	.dropdown ul{
+	float:left;
+	margin:0px;
+	padding:0;
+	}
+	.dropdown li{
+	list-style:none;
+	float:left;
+	padding:13px 12px 13px 12px;
+	background-color:white;
+	border-right:0.5px solid #DADADA;
+	font-family:'Open Sans', sans-serif;
+	font-size:0.8em;
+	color:#515151;
+	}		
+	.topmenu-2 ul{
+	float:left;
+	margin:0px;
+	padding:0;
+	}
+	.topmenu-2 li{
+	list-style:none;
+	float:left;
+	padding:13px 12px 13px 12px;
+	background-color:#ECECEC;
+	border-right:1px solid #DADADA;
+	font-family:'Open Sans', sans-serif;
+	font-size:0.8em;
+	color:#515151;
+	}			
+	#Search input{
+	float:left;
+	padding:13px 0px 2px 5px;
+	margin:5px 2px 10px 8px;
+	height:12px;
+	border:none;
+	}
+	#magnifier {
+	float:left;
+	padding:0px 2px 3px 0;
+	margin-top:4px;
+	margin-bottom:3px;
+	height:30px;
+	}
+		#bodypage{
+		height:600px;
+		width:1030px;
+		float:left;
+		border-left:1px solid #DADADA;
+		border-right:1px solid #DADADA;
+		border-top:1px solid #DADADA;
+		margin:1px 0px 0 160px;
+		}
+		#bodypage img{
+		padding:30px 0 25px 25px;
+		
+		float:left;
+		}
+		#newsbox{
+		float:right;
+		width:300px;
+		height:60px;
+		margin:5px 8px 5px 2px;
+		background-color:white;
+		border:2px solid #DADADA;
+		}
+		#redtitle{
+		margin:0;
+		padding:3px 5px 2px 5px;
+		text-align:top;
+		background-color:#E21A21;
+		width:80px;
+		color:white;
+		font:11px Arial,sans-serif;
+		}
+		#newsitems-1 ul{
+		float:left;
+		margin:5px 0 0 0;
+		padding-left:25px;
+		}
+		#newsitems-1 li{
+		font-family:Arial,sans-serif;
+		color:rgb(17,82,120);
+		font-size:10.8px;
+		margin-bottom:1px;
+		}
+		#newsitems-2 ul{
+		float:right;
+		margin:5px 0 0 0;
+		padding-right:50px;
+		}
+		#newsitems-2 li{
+		font-family:Arial,sans-serif;
+		color:rgb(17,82,120);
+		font-size:10.8px;
+		margin-bottom:1px;
+		}
+		#newsitems-1 li:hover{
+		text-decoration:underline;
+		}
+		#newsitems-2 li:hover{
+		text-decoration:underline;
+		}
+		
+		#midmenu{
+		float:left;
+		margin-left:20px;
+		height:60px;
+		padding:0;
+		background-color:white;
+		border:1px solid #CFCFCF;
+		}
+		#midmenu ul{
+		float:left;
+		margin:0;
+		padding:0;
+		}
+		#midmenu li{
+		list-style:none;
+		float:left;
+		margin:0;
+		padding:9px 16.3px 9px 16.3px;
+		background:linear-gradient(#FFFFFF,#DADADA);
+		border:1px solid #E1E1E1;
+		font-family:'Open Sans', sans-serif;
+		font-size:0.8em;
+		color:#515151;
+		}
+		#First img{
+		float:left;
+		position:relative;
+		padding:0;
+		margin-top:1px;
+		Margin-left:2px;
+		z-index:1;
+		}
+		#First ul{
+		margin:0;
+		}
+		#First li{
+		float:left;
+		position:absolute;
+		margin-top:2px;
+		padding:2px;
+		margin-left:8.3px;
+		background:none !important;
+		border:none;
+		color:white;
+		z-index:2;
+		}
+		#localnews ul{
+		margin-left:10px;
+		}
+		#localnews li{
+		float:left;
+		list-style:none;
+		position:relative;
+		color:#515151;
+		}
+		#localnews li:hover{
+		text-decoration:underline;
+		}
+		#developingbar{
+		float:left;
+		margin-top:15px;
+		margin-left:20px;
+		height:25px;
+		width:1000px;
+		padding:0;
+		background-color:#F1F1F1;
+	
+		}
+		#developingbar ul{
+		float:left;
+		margin:0;
+		padding:0;
+		}
+		#developingbar img{
+		float:left;
+		padding:0;
+		height:25px;
+		}
+		#flashnews ul{
+		float:left;
+		margin:0;
+		}
+		#flashnews li{
+		float:left;
+		list-style:none;
+		font-weight:bold;
+		color:#115278;
+		font-family:arial;
+		font-size:14.4px;
+		line-height:1.6em;
+		text-indent:1em;
+		}
+		#flashnews li:hover{
+		text-decoration:underline;
+		}
+		#newsscroll li{
+		float:right;
+		position: absolute;
+		list-style:none;
+		padding-left:345px;
+		font-size:0.9em;
+		font-weight:bold;
+		}
+		
+		#MainUpdate{
+		float:left;
+		margin-top:25px;
+		margin-left:25px;
+		height:75px;
+		width:460px;
+		padding:0;
+	
+		}
+		#MainUpdate ul{
+		float:left;
+		margin:0;
+		padding:0;
+		}
+		#MainUpdate img{
+		float:left;
+		padding:0;
+		margin:0;
+		}
+		#MainUpdate li{
+		float:left;
+		position:relative;
+		list-style:none;
+		padding-left:7.5px;
+		font-family:arial, san-serif;
+		font-size:28px;
+		font-weight:bold;
+		}
+		#MainUpdate li:hover{
+		text-decoration:underline;
+		}
+		#followline ul{
+		float:left;
+		margin:0
+		padding:0;
+		}
+		#followline li{
+		list-style:none;
+		float:left;
+		margin:0;
+		padding:0;
+		}
+		#followline li:hover{
+		text-decoration:underline;
+		}
+		#MainImage img{
+		float:left;
+		position:relative;
+		margin-top:15px;
+		}
+		
+	</style>
+	
+	</head>
+
+<body>
+	<div id="container">
+	
+		<div id="topbar">
+			<div class="fixedwidth">
+				<div id="mainlogo">
+				<img src="Images\CBClogo.PNG" />
+				</div>
+				<div id="topmenu">
+				<ul>
+					<li id="TV">TV</li>
+					<li id="RADIO">RADIO</li>
+					<li id="NEWS">NEWS</li>
+					<li id="SPORTS">SPORTS</li>
+					<li id="MUSIC">MUSIC</li>
+					<li id="KIDS">KIDS</li>
+				</ul>	
+				</div>
+				<div class="dropdown">
+				<ul>
+				<li id="LOCAL">LOCAL &#9660</li>
+				<li id="MORE">MORE &#9660</li>
+				</ul>
+				</div>
+				<div class="topmenu-2">
+				<ul>
+				<li id="WATCH">WATCH</li>
+				<li id="LISTEN">LISTEN</li>
+				<li id="LOG IN">LOG IN</li>
+				</ul>
+				<div id="Search">
+				<input type="text" placeholder="SEARCH CBC.ca..." />
+				<img id="magnifier" src="Images\Magnifier.PNG"/>
+				</div>
+				</div>
+				</div>
+		
+			</div>
+			<div id="bodypage">
+			<img id="CBClogo-2" src="Images\CBClogo-2.PNG"/>
+			<div id="newsbox">
+			<p id="redtitle">IN THE NEWS</p>
+			<div id="newsitems-1">
+			<ul>
+			<li>Greece crisis</li>
+			<li>CBC investigates</li>
+			</ul>
+			</div>
+			<div id="newsitems-2">
+			<ul>
+			<li>Pan Am Games</li>
+			<li>Missing women</li>
+			</ul>
+			</div>
+			</div>
+			<div id="midmenu">
+			<ul>
+				<li>Home</li>
+				<li>World</li>
+				<li>Canada</li>
+				<li>Politics</li>
+				<li>Business</li>
+				<li>Health</li>
+				<li>Arts & Entertainment</li>
+				<li>Technology & Science</li>
+				<li>Trending</li>
+				<li>Weather</li>
+				<li>Video</li>
+			</ul>
+			<div id="First">
+			<ul>
+			<img src="Images\Pointer.PNG"/>
+			<li>Home</li>
+			</ul>
+			<ul id="localnews">
+			<li>Photo Galleries</li>
+			<li>The National</li>
+			<li>Aboriginals</li>
+			<li>CBC News Network</>
+			</ul>
+			</div>
+			</div>
+			<div id="developingbar">
+			<ul>
+			<img src="Images\Developing.PNG"/>
+			</ul>
+			<ul id="flashnews">
+			<li>Bank of Canada cuts main lending rate to 0.5%;loonie plunges &#187;</li>
+			</ul>
+			<ul id="newsscroll">
+			<li>&#60; &nbsp;&nbsp; &#2405;&nbsp;&nbsp &#62</li>
+			</ul>
+			</div>
+			<div id="MainUpdate">
+			<ul>
+			<img src="Images\Updated.PNG"/>
+			<li>NASA unveils close-</li>
+			</ul>
+			<div id="followline">
+			<ul>
+			<li>ups of Pluto and its moons</li>
+			</ul>
+			</div>
+			<div id="MainImage">
+			<img src="Images\Nasa.PNG"/>
+			</div>
+			</div>
+			
+			
+			
+			</div>
+			</body>
+			</html>
+			
+	
+		</div>
+	</div>
+	
+</body>
+</html>
